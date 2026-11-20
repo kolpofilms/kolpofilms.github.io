@@ -21,6 +21,13 @@ window.KOLPO = {
      concept: true labels it as concept work, never as a client job */
   work: [
     {
+      kind: "ad", concept: true, format: "9:16", length: "0:20",
+      title: "ASTRAVEL · Espresso No. 7",
+      line: { en: "A high-energy coffee ad for a fictional roaster: \"A universe in every cup.\"", bn: "একটি কাল্পনিক কফি ব্র্যান্ডের হাই-এনার্জি বিজ্ঞাপন: \"প্রতিটি কাপে একটি মহাবিশ্ব।\"" },
+      credit: { en: "Product design, 10 AI shots, beat-synced edit, motion graphics, original music", bn: "প্রোডাক্ট ডিজাইন, ১০টি এআই শট, বিট-সিঙ্কড এডিট, মোশন গ্রাফিক্স, অরিজিনাল মিউজিক" },
+      thumb: "assets/img/astravel.png", video: "assets/video/astravel.mp4",
+    },
+    {
       kind: "ad", concept: true, format: "9:16", length: "0:15",
       title: "EMBER & DUNE · Oud de Nuit",
       line: { en: "Luxury perfume ad for a fictional oud house.", bn: "একটি কাল্পনিক উদ ব্র্যান্ডের লাক্সারি পারফিউম বিজ্ঞাপন।" },
