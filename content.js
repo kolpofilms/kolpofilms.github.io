@@ -22,6 +22,13 @@ window.KOLPO = {
   work: [
     {
       kind: "ad", concept: true, format: "9:16", length: "0:20",
+      title: "ZAHRAEL · The Eid Edit",
+      line: { en: "An abaya lookbook ad for a fictional label: one model, three looks, woven from the desert wind.", bn: "একটি কাল্পনিক লেবেলের আবায়া লুকবুক বিজ্ঞাপন: একজন মডেল, তিনটি লুক।" },
+      credit: { en: "Consistent AI model, 3 looks, fabric-wipe edit, motion graphics, original Arabic house music", bn: "একই এআই মডেল, ৩টি লুক, ফ্যাব্রিক-ওয়াইপ এডিট, মোশন গ্রাফিক্স, অরিজিনাল মিউজিক" },
+      thumb: "assets/img/zahrael.png", video: "assets/video/zahrael.mp4",
+    },
+    {
+      kind: "ad", concept: true, format: "9:16", length: "0:20",
       title: "ASTRAVEL · Espresso No. 7",
       line: { en: "A high-energy coffee ad for a fictional roaster: \"A universe in every cup.\"", bn: "একটি কাল্পনিক কফি ব্র্যান্ডের হাই-এনার্জি বিজ্ঞাপন: \"প্রতিটি কাপে একটি মহাবিশ্ব।\"" },
       credit: { en: "Product design, 10 AI shots, beat-synced edit, motion graphics, original music", bn: "প্রোডাক্ট ডিজাইন, ১০টি এআই শট, বিট-সিঙ্কড এডিট, মোশন গ্রাফিক্স, অরিজিনাল মিউজিক" },
