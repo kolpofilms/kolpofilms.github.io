@@ -19,27 +19,42 @@ window.KOLPO = {
      kind:  "ad" | "film" | "music"
      video: a local .mp4 plays in the popup; link: opens in a new tab
      concept: true labels it as concept work, never as a client job */
+  /* Hero reel wall: short silent loops of the best moment of each ad. Tap opens the full ad. */
+  reel: [
+    { title: "DEWLAND", niche: { en: "Skincare", bn: "স্কিনকেয়ার" }, loop: "assets/video/loop-dewland.mp4", poster: "assets/img/loop-dewland.jpg", video: "assets/video/dewland.mp4", glow: "#F0A93E" },
+    { title: "ASTRAVEL", niche: { en: "Coffee", bn: "কফি" }, loop: "assets/video/loop-astravel.mp4", poster: "assets/img/loop-astravel.jpg", video: "assets/video/astravel.mp4", glow: "#E0662E" },
+    { title: "ZAHRAEL", niche: { en: "Fashion", bn: "ফ্যাশন" }, loop: "assets/video/loop-zahrael.mp4", poster: "assets/img/loop-zahrael.jpg", video: "assets/video/zahrael.mp4", glow: "#2E9B76" },
+    { title: "EMBER & DUNE", niche: { en: "Perfume", bn: "পারফিউম" }, loop: "assets/video/loop-ember-dune.mp4", poster: "assets/img/loop-ember-dune.jpg", video: "assets/video/ember-dune.mp4", glow: "#D9A24A" },
+  ],
+
   work: [
+    {
+      kind: "ad", concept: true, format: "9:16", length: "0:20",
+      title: "DEWLAND · Kakadu C Serum",
+      line: { en: "A clean-beauty skincare ad for a fictional Australian brand: \"Bottled Australian sunrise.\"", bn: "একটি কাল্পনিক অস্ট্রেলিয়ান স্কিনকেয়ার ব্র্যান্ডের বিজ্ঞাপন: \"বোতলে অস্ট্রেলিয়ার সূর্যোদয়।\"" },
+      credit: { en: "Close-up AI shots, match-cut edit, ingredient labels, AI music, sound design · delivered as 20s, 6s, 4:5 and A/B openings", bn: "ক্লোজ-আপ এআই শট, ম্যাচ-কাট এডিট, উপাদানের লেবেল, এআই মিউজিক, সাউন্ড ডিজাইন · ২০ সেকেন্ড, ৬ সেকেন্ড, ৪:৫ ও দুটি ভিন্ন শুরু" },
+      thumb: "assets/img/dewland.png", video: "assets/video/dewland.mp4", preview: "assets/video/loop-dewland.mp4",
+    },
     {
       kind: "ad", concept: true, format: "9:16", length: "0:20",
       title: "ZAHRAEL · The Eid Edit",
       line: { en: "An abaya lookbook ad for a fictional label: one model, three looks, woven from the desert wind.", bn: "একটি কাল্পনিক লেবেলের আবায়া লুকবুক বিজ্ঞাপন: একজন মডেল, তিনটি লুক।" },
       credit: { en: "Consistent AI model, 3 looks, fabric-wipe edit, motion graphics, original Arabic house music", bn: "একই এআই মডেল, ৩টি লুক, ফ্যাব্রিক-ওয়াইপ এডিট, মোশন গ্রাফিক্স, অরিজিনাল মিউজিক" },
-      thumb: "assets/img/zahrael.png", video: "assets/video/zahrael.mp4",
+      thumb: "assets/img/zahrael.png", video: "assets/video/zahrael.mp4", preview: "assets/video/loop-zahrael.mp4",
     },
     {
       kind: "ad", concept: true, format: "9:16", length: "0:20",
       title: "ASTRAVEL · Espresso No. 7",
       line: { en: "A high-energy coffee ad for a fictional roaster: \"A universe in every cup.\"", bn: "একটি কাল্পনিক কফি ব্র্যান্ডের হাই-এনার্জি বিজ্ঞাপন: \"প্রতিটি কাপে একটি মহাবিশ্ব।\"" },
       credit: { en: "Product design, 10 AI shots, beat-synced edit, motion graphics, original music", bn: "প্রোডাক্ট ডিজাইন, ১০টি এআই শট, বিট-সিঙ্কড এডিট, মোশন গ্রাফিক্স, অরিজিনাল মিউজিক" },
-      thumb: "assets/img/astravel.png", video: "assets/video/astravel.mp4",
+      thumb: "assets/img/astravel.png", video: "assets/video/astravel.mp4", preview: "assets/video/loop-astravel.mp4",
     },
     {
       kind: "ad", concept: true, format: "9:16", length: "0:15",
       title: "EMBER & DUNE · Oud de Nuit",
       line: { en: "Luxury perfume ad for a fictional oud house.", bn: "একটি কাল্পনিক উদ ব্র্যান্ডের লাক্সারি পারফিউম বিজ্ঞাপন।" },
       credit: { en: "Product design, AI shots, edit, original music", bn: "প্রোডাক্ট ডিজাইন, এআই শট, এডিট, অরিজিনাল মিউজিক" },
-      thumb: "assets/img/ember-dune.png", video: "assets/video/ember-dune.mp4",
+      thumb: "assets/img/ember-dune.png", video: "assets/video/ember-dune.mp4", preview: "assets/video/loop-ember-dune.mp4",
     },
     {
       kind: "film", format: "9:16",
@@ -116,13 +131,22 @@ window.KOLPO = {
   /* Short UI texts */
   i18n: {
     en: {
-      nav_work: "Work", nav_making: "Making of", nav_services: "Services", nav_process: "Process", nav_contact: "Contact",
+      nav_work: "Work", nav_offer: "Free sample", nav_making: "Making of", nav_services: "Services", nav_process: "Process", nav_contact: "Contact",
       cta_start: "Start a project",
       hero_kicker: "AI film & ad studio · Bangladesh, worldwide",
       hero_title: "Imagination,<br><em>filmed.</em>",
       hero_sub: "Kolpo Films turns a brief into cinematic ads, product films and short stories with generative AI. No crew, no sets, no waiting weeks.",
-      hero_play: "Watch the latest film",
+      hero_play: "Watch the showreel",
       hero_now: "Now showing",
+      hero_sample: "Get a free sample",
+      proof_ads: "ads, 4 industries", proof_cams: "cameras or crew", proof_photo: "product photo to start",
+      scroll_cue: "Scroll for the full films", tap_watch: "Tap to watch",
+      offer_kicker: "Free sample", offer_title: "One photo in. <em>An ad out.</em>",
+      offer_sub: "Drag the slider. On one side is the only thing we started with: one product image. On the other is the ad we made from it.",
+      deliver_1: "20s main ad", deliver_2: "6s short version", deliver_3: "4:5 feed version", deliver_4: "Two openings to A/B test",
+      offer_btn: "Send one photo on WhatsApp", offer_note: "We'll make you a free 10-second sample with your own product.",
+      offer_wa: "Hi Kolpo Films! I'd like a free 10-second sample ad. Here is my product photo:",
+      cmp_before: "The photo", cmp_after: "The ad", loading: "Loading…",
       work_kicker: "Selected work", work_title: "Films that <em>feel</em> real.",
       f_all: "All", f_ad: "Ads", f_film: "Short films", f_music: "Music videos",
       concept: "Concept ad", watch: "Watch", open: "Watch on Facebook",
@@ -142,13 +166,22 @@ window.KOLPO = {
       footer: "Imagination, filmed.",
     },
     bn: {
-      nav_work: "কাজ", nav_making: "যেভাবে বানাই", nav_services: "সার্ভিস", nav_process: "প্রসেস", nav_contact: "যোগাযোগ",
+      nav_work: "কাজ", nav_offer: "ফ্রি স্যাম্পল", nav_making: "যেভাবে বানাই", nav_services: "সার্ভিস", nav_process: "প্রসেস", nav_contact: "যোগাযোগ",
       cta_start: "প্রজেক্ট শুরু করুন",
       hero_kicker: "এআই ফিল্ম ও বিজ্ঞাপন স্টুডিও · বাংলাদেশ ও বিশ্বজুড়ে",
       hero_title: "কল্পনা,<br><em>ক্যামেরায়।</em>",
       hero_sub: "কল্প ফিল্মস জেনারেটিভ এআই দিয়ে আপনার ব্রিফকে বানায় সিনেমাটিক বিজ্ঞাপন, প্রোডাক্ট ফিল্ম আর শর্ট ফিল্ম। কোনো ক্রু নেই, সেট নেই, সপ্তাহের পর সপ্তাহ অপেক্ষাও নেই।",
-      hero_play: "সর্বশেষ ফিল্ম দেখুন",
+      hero_play: "শোরিল দেখুন",
       hero_now: "এখন দেখছেন",
+      hero_sample: "ফ্রি স্যাম্পল নিন",
+      proof_ads: "বিজ্ঞাপন, ৪টি ইন্ডাস্ট্রি", proof_cams: "ক্যামেরা বা ক্রু", proof_photo: "প্রোডাক্ট ছবি দিয়েই শুরু",
+      scroll_cue: "পুরো ফিল্ম দেখতে স্ক্রল করুন", tap_watch: "দেখতে ট্যাপ করুন",
+      offer_kicker: "ফ্রি স্যাম্পল", offer_title: "একটি ছবি দিন। <em>বিজ্ঞাপন নিন।</em>",
+      offer_sub: "স্লাইডারটি টানুন। একপাশে আমাদের শুরুর একমাত্র জিনিস: একটি প্রোডাক্টের ছবি। অন্যপাশে সেই ছবি থেকে বানানো বিজ্ঞাপন।",
+      deliver_1: "২০ সেকেন্ডের মূল বিজ্ঞাপন", deliver_2: "৬ সেকেন্ডের ছোট ভার্সন", deliver_3: "৪:৫ ফিড ভার্সন", deliver_4: "A/B টেস্টের জন্য দুটি শুরু",
+      offer_btn: "হোয়াটসঅ্যাপে একটি ছবি পাঠান", offer_note: "আপনার প্রোডাক্ট দিয়ে ১০ সেকেন্ডের একটি ফ্রি স্যাম্পল বানিয়ে দেব।",
+      offer_wa: "হ্যালো কল্প ফিল্মস! আমি ১০ সেকেন্ডের একটি ফ্রি স্যাম্পল বিজ্ঞাপন চাই। এই আমার প্রোডাক্টের ছবি:",
+      cmp_before: "ছবি", cmp_after: "বিজ্ঞাপন", loading: "লোড হচ্ছে…",
       work_kicker: "নির্বাচিত কাজ", work_title: "যে ফিল্ম <em>সত্যি</em> মনে হয়।",
       f_all: "সব", f_ad: "বিজ্ঞাপন", f_film: "শর্ট ফিল্ম", f_music: "মিউজিক ভিডিও",
       concept: "কনসেপ্ট বিজ্ঞাপন", watch: "দেখুন", open: "ফেসবুকে দেখুন",

@@ -10,7 +10,7 @@
   <meta property="og:description" content="AI ad films, product films and short stories. No crew, no sets, no waiting weeks." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kolpofilms.github.io/" />
-  <meta property="og:image" content="https://kolpofilms.github.io/assets/img/ember-dune.png" />
+  <meta property="og:image" content="https://kolpofilms.github.io/assets/img/dewland.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://kolpofilms.github.io/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -31,6 +31,7 @@
     <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="#work" data-i18n="nav_work">Work</a></li>
+        <li><a href="#offer" data-i18n="nav_offer">Free sample</a></li>
         <li><a href="#making" data-i18n="nav_making">Making of</a></li>
         <li><a href="#services" data-i18n="nav_services">Services</a></li>
         <li><a href="#process" data-i18n="nav_process">Process</a></li>
@@ -44,13 +45,13 @@
     </div>
   </header>
   <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="#work" data-i18n="nav_work">Work</a><a href="#making" data-i18n="nav_making">Making of</a><a href="#services" data-i18n="nav_services">Services</a><a href="#process" data-i18n="nav_process">Process</a><a href="#contact" data-i18n="nav_contact">Contact</a>
+    <a href="#work" data-i18n="nav_work">Work</a><a href="#offer" data-i18n="nav_offer">Free sample</a><a href="#making" data-i18n="nav_making">Making of</a><a href="#services" data-i18n="nav_services">Services</a><a href="#process" data-i18n="nav_process">Process</a><a href="#contact" data-i18n="nav_contact">Contact</a>
   </div>
 
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
-      <video class="hero-bg" src="assets/video/hero-loop.mp4" poster="assets/img/poster-hero.jpg" muted loop playsinline autoplay aria-hidden="true"></video>
+      <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
@@ -58,21 +59,21 @@
           <h1 class="hero-title reveal" data-i18n="hero_title">Imagination,<br><em>filmed.</em></h1>
           <p class="hero-sub reveal" data-i18n="hero_sub">Kolpo Films turns a brief into cinematic ads, product films and short stories with generative AI.</p>
           <div class="hero-cta reveal">
-            <button class="btn btn-amber" type="button" data-play="assets/video/ember-dune.mp4" data-vertical="true">
+            <button class="btn btn-amber" type="button" data-play="assets/video/showreel.mp4" data-vertical="true" data-poster="assets/img/loop-dewland.jpg">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
-              <span data-i18n="hero_play">Watch the latest film</span>
+              <span data-i18n="hero_play">Watch the showreel</span>
             </button>
-            <a href="#contact" class="btn btn-ghost" data-i18n="cta_start">Start a project</a>
+            <a href="#offer" class="btn btn-ghost" data-i18n="hero_sample">Get a free sample</a>
           </div>
+          <ul class="hero-proof reveal" aria-label="Studio facts">
+            <li><b data-count="4">4</b><span data-i18n="proof_ads">ads, 4 industries</span></li>
+            <li><b data-count="0">0</b><span data-i18n="proof_cams">cameras or crew</span></li>
+            <li><b data-count="1">1</b><span data-i18n="proof_photo">product photo to start</span></li>
+          </ul>
         </div>
-        <figure class="screen reveal" aria-label="Now showing: EMBER & DUNE concept ad">
-          <div class="screen-frame">
-            <video src="assets/video/hero-loop.mp4" poster="assets/img/poster-hero.jpg" muted loop playsinline autoplay></video>
-            <span class="screen-corner tl"></span><span class="screen-corner tr"></span><span class="screen-corner bl"></span><span class="screen-corner br"></span>
-          </div>
-          <figcaption><span class="dot"></span><span data-i18n="hero_now">Now showing</span> · EMBER &amp; DUNE</figcaption>
-        </figure>
+        <div class="reel-wall reveal" id="reel-wall" aria-label="Recent ads, tap one to watch"></div>
       </div>
+      <a class="scroll-cue" href="#work" aria-label="Scroll to the work"><span data-i18n="scroll_cue">Scroll for the full films</span><i aria-hidden="true"></i></a>
       <div class="hero-strip" aria-hidden="true">
         <div class="strip-track">
           <span>AI ad films</span><span>Product films</span><span>Brand stories</span><span>Short films</span><span>Music videos</span><span>Reels & TikTok</span><span>16:9 · 9:16 · 1:1</span><span>বাংলা · English</span>
@@ -94,6 +95,32 @@
         </div>
       </div>
       <div class="work-grid" id="work-grid"></div>
+    </section>
+
+    <!-- OFFER: one photo in, one ad out -->
+    <section class="section offer" id="offer">
+      <div class="offer-grid">
+        <div class="offer-copy">
+          <p class="kicker reveal" data-i18n="offer_kicker">Free sample</p>
+          <h2 class="reveal" data-i18n="offer_title">One photo in. <em>An ad out.</em></h2>
+          <p class="lede reveal" data-i18n="offer_sub">Drag the slider. On the left is the only thing we started with: one product image. On the right is the ad we made from it.</p>
+          <ul class="deliver reveal" aria-label="What you get">
+            <li data-i18n="deliver_1">20s main ad</li><li data-i18n="deliver_2">6s short version</li><li data-i18n="deliver_3">4:5 feed version</li><li data-i18n="deliver_4">Two openings to A/B test</li>
+          </ul>
+          <div class="offer-cta reveal">
+            <a class="btn btn-amber" id="offer-wa" target="_blank" rel="noopener" data-i18n="offer_btn">Send one photo on WhatsApp</a>
+            <p class="offer-note" data-i18n="offer_note">We'll make you a free 10-second sample with your own product.</p>
+          </div>
+        </div>
+        <div class="compare reveal" id="compare" style="--pos: 50%">
+          <video class="compare-after" src="assets/video/loop-dewland.mp4" poster="assets/img/loop-dewland.jpg" muted loop playsinline autoplay aria-hidden="true"></video>
+          <div class="compare-before"><img src="assets/img/dewland-photo.jpg" alt="The DEWLAND product photo we started from" loading="lazy" /></div>
+          <span class="compare-tag before" data-i18n="cmp_before">The photo</span>
+          <span class="compare-tag after" data-i18n="cmp_after">The ad</span>
+          <div class="compare-handle" aria-hidden="true"><span>⟷</span></div>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare the product photo with the finished ad" />
+        </div>
+      </div>
     </section>
 
     <!-- MAKING OF -->
